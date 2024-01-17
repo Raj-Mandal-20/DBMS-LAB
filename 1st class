@@ -1,0 +1,20 @@
+create table branch(
+    br_name varchar2(40),
+    br_city varchar2(30),
+    assect Number(5)
+)
+describe branch
+
+insert into branch values('Beliaghata', 'Kolkata', 10000)
+insert into branch values('Tangra', 'Kolkata', 40000)
+insert into branch values('Dular', 'Kolkata', 1000)
+insert into branch values('Lilua', 'Howrah', 15000)
+insert into branch values('Chandan Nagar', 'Chuchura', 5000)
+select * from branch 
+
+select br_name , br_city, assect from branch
+select  assect, br_city from branch
+
+select br_name from branch where assect > 10000 and assect < 30000
+select distinct br_city from branch
+
